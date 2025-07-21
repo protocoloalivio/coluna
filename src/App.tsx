@@ -15,10 +15,7 @@ import {
   ChevronUp,
   ChevronDown,
   X,
-  ArrowDown,
-  Gift,
-  Percent,
-  Heart
+  ArrowDown
 } from 'lucide-react';
 
 // Dados para as notificações
@@ -397,11 +394,11 @@ function App() {
       {currentPage === 'offers' && (
         <div className="animate-fade-in">
           {/* BOTÃO VOLTAR */}
-          <div className="bg-white py-4 border-b border-gray-200">
+          <div className="bg-orange-50 py-4">
             <div className="max-w-6xl mx-auto px-4">
               <button 
                 onClick={handleBackToLanding}
-                className="flex items-center gap-2 text-gray-600 hover:text-orange-600 font-semibold transition-colors"
+                className="flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold transition-colors"
               >
                 <ChevronUp className="w-4 h-4" />
                 Voltar ao início
@@ -409,31 +406,19 @@ function App() {
             </div>
           </div>
 
-          {/* SEÇÃO BRANCA DE TRANSIÇÃO */}
-          <div className="bg-white py-8">
-            <div className="max-w-4xl mx-auto px-4 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                Escolha Seu Caminho Para Uma Vida Sem Dor
-              </h2>
-              <p className="text-lg text-gray-600">
-                Mais de 27.482 pessoas já recuperaram sua qualidade de vida
-              </p>
-            </div>
-          </div>
-
           {/* OFERTA (A HORA DE PASSAR O CARTÃO) */}
-          <section className="py-8 md:py-16 bg-gradient-to-br from-green-50 to-blue-50">
+          <section className="py-8 md:py-16 bg-gradient-to-br from-orange-600 to-orange-500 text-white">
             <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-4 text-gray-800">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-4 text-white">
                 ESCOLHA O SEU KIT DA LIBERDADE
               </h2>
-              <p className="text-lg md:text-xl text-center mb-8 md:mb-12 text-orange-600 font-semibold">
+              <p className="text-lg md:text-xl text-center mb-8 md:mb-12 text-orange-100 font-semibold">
                 DESCONTO DE LANÇAMENTO DE ATÉ 60% HOJE!
               </p>
               <div className="grid gap-6 md:gap-8 mb-8 md:mb-12">
                 {/* Kit 1 */}
-                <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-gray-200 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-gray-700">EXPERIMENTE</h3>
+                <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-orange-200 hover:shadow-xl transition-shadow">
+                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800">EXPERIMENTE</h3>
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/eobjHnm.png" 
@@ -447,61 +432,43 @@ function App() {
                   </div>
                   <button 
                     onClick={() => handleCheckoutClick("https://pay.kirvano.com/40d3f4fe-7396-4aae-95a7-d55fc1a43c1b")}
-                    className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors flex items-center justify-center gap-2"
+                    className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors"
                   >
-                    <Heart className="w-5 h-5" />
-                    QUERO COMEÇAR AGORA!
+                    COMPRAR AGORA
                   </button>
                 </div>
 
                 {/* Kit 2 - MAIS VENDIDO */}
-                <div className="bg-white rounded-lg shadow-xl p-4 md:p-8 border-4 border-green-500 hover:shadow-2xl transition-shadow relative transform hover:scale-105">
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-green-600 to-green-500 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-sm md:text-base shadow-lg">
-                    ⭐ MAIS POPULAR ⭐
+                <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-4 border-orange-600 hover:shadow-xl transition-shadow relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white px-4 md:px-6 py-1 md:py-2 rounded-full font-bold text-sm md:text-base">
+                    MAIS VENDIDO
                   </div>
-                  <div className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-2 animate-pulse">
-                    <Award className="w-4 h-4 md:w-6 md:h-6" />
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-green-700 mt-2 md:mt-4">LEVE 3 POTES</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800 mt-2 md:mt-4">LEVE 3 POTES</h3>
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/Mnogy18.png" 
                       alt="3 Potes Articulazen" 
                       className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4 rounded"
                     />
-                    <p className="text-base md:text-lg text-green-600 mb-2 font-semibold">Tratamento 3 Meses</p>
+                    <p className="text-base md:text-lg text-orange-600 mb-2">Tratamento 3 Meses</p>
                     <p className="text-sm text-gray-500 line-through">De R$ 381</p>
-                    <p className="text-3xl md:text-4xl font-bold text-green-600 mb-2">R$ 197,00</p>
-                    <p className="text-xs md:text-sm text-green-600">ou 12x de R$ 16,42</p>
-                    <div className="bg-green-100 text-green-700 px-3 py-2 rounded-full text-xs md:text-sm font-bold mt-3 flex items-center justify-center gap-1">
-                      <Percent className="w-3 h-3 md:w-4 md:h-4" />
+                    <p className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">R$ 197,00</p>
+                    <p className="text-xs md:text-sm text-orange-600">ou 12x de R$ 16,42</p>
+                    <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs md:text-sm font-bold mt-2">
                       48% DE DESCONTO
                     </div>
-                    <p className="text-green-600 font-bold text-xs md:text-sm mt-2 flex items-center justify-center gap-1">
-                      <Truck className="w-3 h-3 md:w-4 md:h-4" />
-                      FRETE GRÁTIS
-                    </p>
+                    <p className="text-orange-600 font-bold text-xs md:text-sm mt-2">+ FRETE GRÁTIS</p>
                   </div>
                   <button 
                     onClick={() => handleCheckoutClick("https://LINK_CHECKOUT_KIT_3_AQUI")}
-                    className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-bold py-4 md:py-5 px-4 md:px-6 rounded-lg text-base md:text-lg transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+                    className="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors"
                   >
-                    <Heart className="w-5 h-5" />
-                    QUERO MINHA LIBERDADE DAS DORES!
+                    COMPRAR COM DESCONTO MÁXIMO
                   </button>
                 </div>
 
-                {/* SEÇÃO BRANCA DE SEPARAÇÃO */}
-                <div className="bg-white py-6 rounded-lg shadow-sm">
-                  <div className="text-center">
-                    <p className="text-gray-600 text-sm md:text-base">
-                      💡 <strong>Dica:</strong> O tratamento de 5 meses garante resultados duradouros
-                    </p>
-                  </div>
-                </div>
-
                 {/* Kit 3 */}
-                <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-blue-300 hover:shadow-xl transition-shadow">
+                <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-orange-200 hover:shadow-xl transition-shadow">
                   {/* CONTADOR REGRESSIVO */}
                   <div className="bg-red-600 text-white text-center py-2 md:py-3 rounded-t-lg -mx-4 md:-mx-8 -mt-4 md:-mt-8 mb-4 md:mb-6">
                     <p className="text-xs md:text-sm font-bold mb-1">⚠️ OFERTA ESPECIAL ACABA EM:</p>
@@ -517,32 +484,27 @@ function App() {
                     <p className="text-xs md:text-sm mt-1">MINUTOS : SEGUNDOS</p>
                   </div>
                   
-                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-blue-700">TRATAMENTO COMPLETO</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800">COMPLETO</h3>
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/PQfnT3P.jpeg" 
                       alt="5 Potes Articulazen" 
                       className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4 rounded"
                     />
-                    <p className="text-base md:text-lg text-blue-600 mb-2 font-semibold">5 Potes - Tratamento 5 Meses</p>
+                    <p className="text-base md:text-lg text-orange-600 mb-2">5 Potes - Tratamento 5 Meses</p>
                     <p className="text-sm text-gray-500 line-through">De R$ 635</p>
-                    <p className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">R$ 247,00</p>
-                    <p className="text-xs md:text-sm text-blue-600">ou 12x de R$ 20,58</p>
-                    <div className="bg-blue-100 text-blue-700 px-3 py-2 rounded-full text-xs md:text-sm font-bold mt-3 flex items-center justify-center gap-1">
-                      <Percent className="w-3 h-3 md:w-4 md:h-4" />
+                    <p className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">R$ 247,00</p>
+                    <p className="text-xs md:text-sm text-orange-600">ou 12x de R$ 20,58</p>
+                    <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs md:text-sm font-bold mt-2">
                       61% DE DESCONTO
                     </div>
-                    <p className="text-blue-600 font-bold text-xs md:text-sm mt-2 flex items-center justify-center gap-1">
-                      <Gift className="w-3 h-3 md:w-4 md:h-4" />
-                      FRETE GRÁTIS
-                    </p>
+                    <p className="text-orange-600 font-bold text-xs md:text-sm mt-2">+ FRETE GRÁTIS</p>
                   </div>
                   <button 
                     onClick={() => handleCheckoutClick("https://LINK_CHECKOUT_KIT_5_AQUI")}
-                    className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 md:py-5 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors animate-pulse flex items-center justify-center gap-2"
+                    className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors animate-pulse"
                   >
-                    <Heart className="w-5 h-5" />
-                    🔥 QUERO COMEÇAR MINHA NOVA VIDA!
+                    🔥 GARANTIR DESCONTO ANTES QUE ACABE
                   </button>
                   <p className="text-center text-red-600 font-bold text-xs md:text-sm mt-2">
                     ⚠️ Apenas {Math.floor(Math.random() * 8) + 3} unidades restantes!
@@ -550,54 +512,35 @@ function App() {
                 </div>
               </div>
 
-              {/* SEÇÃO BRANCA COM SELOS DE CONFIANÇA */}
-              <div className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8">
-                <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-gray-800">
-                  Sua Compra Está 100% Protegida
-                </h3>
-                
-                {/* Ícones de Segurança */}
-                <div className="flex justify-center items-center flex-wrap gap-6 md:gap-12 mb-6 text-gray-700">
-                  <div className="flex flex-col items-center gap-2 text-center">
-                    <div className="bg-green-100 p-3 rounded-full">
-                      <Lock className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
-                    </div>
-                    <span className="text-xs md:text-sm font-semibold">Compra<br/>Segura</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 text-center">
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <Shield className="w-6 h-6 md:w-8 md:h-8 text-blue-600" />
-                    </div>
-                    <span className="text-xs md:text-sm font-semibold">Site<br/>Protegido</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 text-center">
-                    <div className="bg-orange-100 p-3 rounded-full">
-                      <Truck className="w-6 h-6 md:w-8 md:h-8 text-orange-600" />
-                    </div>
-                    <span className="text-xs md:text-sm font-semibold">Entrega<br/>Garantida</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 text-center">
-                    <div className="bg-purple-100 p-3 rounded-full">
-                      <CreditCard className="w-6 h-6 md:w-8 md:h-8 text-purple-600" />
-                    </div>
-                    <span className="text-xs md:text-sm font-semibold">Pagamento<br/>Seguro</span>
-                  </div>
+              {/* Ícones de Segurança */}
+              <div className="flex justify-center items-center flex-wrap gap-4 md:gap-8 mb-6 md:mb-8 text-white">
+                <div className="flex items-center gap-2">
+                  <Lock className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                  <span className="text-xs md:text-sm font-semibold">Compra Segura</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                  <span className="text-xs md:text-sm font-semibold">Site Protegido</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Truck className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                  <span className="text-xs md:text-sm font-semibold">Entrega Garantida</span>
+                </div>
+              </div>
 
-                {/* Bandeiras de Cartão */}
-                <div className="flex justify-center items-center gap-3 md:gap-4 flex-wrap">
-                  <div className="bg-blue-600 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-bold shadow-sm">VISA</div>
-                  <div className="bg-red-600 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-bold shadow-sm">MASTER</div>
-                  <div className="bg-blue-800 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-bold shadow-sm">AMEX</div>
-                  <div className="bg-orange-600 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-bold shadow-sm">ELO</div>
-                  <div className="bg-green-600 text-white px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-bold shadow-sm">PIX</div>
-                </div>
+              {/* Bandeiras de Cartão */}
+              <div className="flex justify-center items-center gap-2 md:gap-4 flex-wrap">
+                <div className="bg-blue-600 text-white px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">VISA</div>
+                <div className="bg-red-600 text-white px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">MASTER</div>
+                <div className="bg-blue-800 text-white px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">AMEX</div>
+                <div className="bg-orange-600 text-white px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">ELO</div>
+                <div className="bg-yellow-600 text-white px-2 md:px-3 py-1 rounded text-xs md:text-sm font-bold">PIX</div>
               </div>
             </div>
           </section>
 
           {/* FOOTER FINAL */}
-          <footer className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-8 md:py-16 text-center">
+          <footer className="bg-orange-600 text-white py-8 md:py-16 text-center">
             <div className="max-w-4xl mx-auto px-4">
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
                 NÃO DEIXE A DOR ROUBAR MAIS UM DIA DA SUA VIDA!
