@@ -440,8 +440,14 @@ function App() {
 
                 {/* Kit 2 - MAIS VENDIDO */}
                 <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-4 border-orange-600 hover:shadow-xl transition-shadow relative">
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white px-4 md:px-6 py-1 md:py-2 rounded-full font-bold text-sm md:text-base">
-                    MAIS VENDIDO
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-black text-base md:text-lg shadow-lg border-2 border-white">
+                    ⭐ MAIS POPULAR ⭐
+                  </div>
+                  <div className="absolute -top-2 -right-2 bg-yellow-400 text-orange-800 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center font-black text-xs md:text-sm shadow-lg border-2 border-white transform rotate-12">
+                    <div className="text-center">
+                      <div>48%</div>
+                      <div>OFF</div>
+                    </div>
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800 mt-2 md:mt-4">LEVE 3 POTES</h3>
                   <div className="text-center mb-6">
@@ -506,9 +512,6 @@ function App() {
                   >
                     🔥 GARANTIR DESCONTO ANTES QUE ACABE
                   </button>
-                  <p className="text-center text-red-600 font-bold text-xs md:text-sm mt-2">
-                    ⚠️ Apenas {Math.floor(Math.random() * 8) + 3} unidades restantes!
-                  </p>
                 </div>
               </div>
 
