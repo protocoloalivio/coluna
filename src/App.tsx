@@ -469,7 +469,7 @@ function App() {
                     onClick={() => handleCheckoutClick("https://LINK_CHECKOUT_KIT_3_AQUI")}
                     className="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors"
                   >
-                    COMPRAR COM DESCONTO MÁXIMO
+                    🚀 QUERO MINHA LIBERDADE DAS DORES!
                   </button>
                 </div>
 
