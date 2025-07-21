@@ -422,7 +422,7 @@ function App() {
           </div>
 
           {/* OFERTA (A HORA DE PASSAR O CARTÃO) */}
-          <section className="py-8 md:py-16 bg-orange-50">
+          <section className="py-8 md:py-16 bg-gradient-to-br from-green-50 to-blue-50">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-4 text-gray-800">
                 ESCOLHA O SEU KIT DA LIBERDADE
@@ -544,6 +544,9 @@ function App() {
                     <Heart className="w-5 h-5" />
                     🔥 QUERO COMEÇAR MINHA NOVA VIDA!
                   </button>
+                  <p className="text-center text-red-600 font-bold text-xs md:text-sm mt-2">
+                    ⚠️ Apenas {Math.floor(Math.random() * 8) + 3} unidades restantes!
+                  </p>
                 </div>
               </div>
 
