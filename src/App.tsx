@@ -15,7 +15,10 @@ import {
   ChevronUp,
   ChevronDown,
   X,
-  ArrowDown
+  ArrowDown,
+  Gift,
+  Percent,
+  Heart
 } from 'lucide-react';
 
 // Dados para as notificações
