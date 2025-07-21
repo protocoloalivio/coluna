@@ -393,19 +393,6 @@ function App() {
       {/* PÁGINA DE OFERTAS */}
       {currentPage === 'offers' && (
         <div className="animate-fade-in">
-          {/* BOTÃO VOLTAR */}
-          <div className="bg-orange-50 py-4">
-            <div className="max-w-6xl mx-auto px-4">
-              <button 
-                onClick={handleBackToLanding}
-                className="flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold transition-colors"
-              >
-                <ChevronUp className="w-4 h-4" />
-                Voltar ao início
-              </button>
-            </div>
-          </div>
-
           {/* OFERTA (A HORA DE PASSAR O CARTÃO) */}
           <section className="py-8 md:py-16 bg-gradient-to-br from-orange-600 to-orange-500 text-white">
             <div className="max-w-6xl mx-auto px-4">
