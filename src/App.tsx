@@ -302,75 +302,29 @@ function App() {
         {/* PROVA SOCIAL (PRA CALAR A BOCA DOS CÉTICOS) */}
         <section className="py-8 md:py-16 bg-orange-50">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-orange-800">
-              Quem Usou, Aprovou. Veja Histórias <span className="text-orange-600">REAIS:</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 text-orange-800 leading-tight">
+              "Eu Achei Que Ia Viver Com Dor Para Sempre, Até Encontrar Isso..."
             </h2>
-            <div className="grid gap-6 md:gap-8">
-              <div className="bg-white p-4 md:p-6 rounded-lg border-l-4 border-orange-500 shadow-md">
-                <div className="flex items-center mb-4">
-                  <img 
-                    src="https://i.imgur.com/8seCdzw.jpeg" 
-                    alt="Maria Silva" 
-                    className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 className="font-bold text-orange-800 text-sm md:text-base">Maria Silva</h4>
-                    <p className="text-xs md:text-sm text-gray-600">67 anos</p>
-                    <div className="flex text-orange-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-700 italic text-sm md:text-base">
-                  "Eu não aguentava mais de dor no joelho, mal conseguia brincar com meu neto. 
-                  Em 3 semanas com o Articulazen, parece que tenho um joelho novo! Voltei a caminhar no parque. Obrigada!"
-                </p>
+            <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <img 
+                  src="https://i.imgur.com/nCiMbnz.jpeg" 
+                  alt="Marisa S. - Depoimento Articulazen" 
+                  className="w-80 h-80 md:w-96 md:h-96 rounded-lg shadow-xl object-cover"
+                />
               </div>
-              <div className="bg-white p-4 md:p-6 rounded-lg border-l-4 border-orange-500 shadow-md">
-                <div className="flex items-center mb-4">
-                  <img 
-                    src="https://i.imgur.com/mKzLANi.jpeg" 
-                    alt="João Santos" 
-                    className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 className="font-bold text-orange-800 text-sm md:text-base">João Santos</h4>
-                    <p className="text-xs md:text-sm text-gray-600">58 anos</p>
-                    <div className="flex text-orange-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
-                      ))}
-                    </div>
+              <div className="w-full lg:w-1/2">
+                <div className="mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold text-orange-800 mb-2">Marisa S. - 58 anos, Campinas/SP</h3>
+                  <div className="flex text-orange-500 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 md:w-6 md:h-6 fill-current" />
+                    ))}
                   </div>
                 </div>
-                <p className="text-gray-700 italic text-sm md:text-base">
-                  "Minha artrite nas mãos era um inferno. Tomava remédio forte todo dia. 
-                  Um amigo indicou o Articulazen e eu duvidei. Puta que pariu, foi a melhor coisa que fiz. A dor sumiu 90%."
-                </p>
-              </div>
-              <div className="bg-white p-4 md:p-6 rounded-lg border-l-4 border-orange-500 shadow-md">
-                <div className="flex items-center mb-4">
-                  <img 
-                    src="https://i.imgur.com/CHKsLhu.jpeg" 
-                    alt="Ana Costa" 
-                    className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 className="font-bold text-orange-800 text-sm md:text-base">Ana Costa</h4>
-                    <p className="text-xs md:text-sm text-gray-600">72 anos</p>
-                    <div className="flex text-orange-500">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-700 italic text-sm md:text-base">
-                  "Meu médico disse que era da idade e pra me acostumar. Acostumar o caralho! 
-                  O Articulazen me devolveu a vida."
-                </p>
+                <blockquote className="text-gray-700 text-base md:text-lg leading-relaxed italic">
+                  "Meu nome é Marisa e por anos eu sofri com dores insuportáveis no joelho. Já não conseguia nem brincar com meus netos no parque. Gastei rios de dinheiro com remédios que só mascaravam a dor. Quando uma amiga me indicou o Articulazen, eu duvidei, mas resolvi tentar. Na terceira semana eu já era outra mulher! Hoje eu corro no parque com meus netos e sinto que ganhei minha vida de volta. Sou muito grata!"
+                </blockquote>
               </div>
             </div>
           </div>
