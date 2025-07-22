@@ -82,8 +82,8 @@ function App() {
       setTimeout(() => {
         setCurrentNotification((prev) => (prev + 1) % notifications.length);
         setShowNotification(true);
-      }, 800);
-    }, 7000);
+      }, 1200);
+    }, 12000);
 
     return () => clearInterval(interval);
   }, []);
