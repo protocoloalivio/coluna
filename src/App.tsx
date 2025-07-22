@@ -344,6 +344,50 @@ function App() {
             <div className="max-w-sm mx-auto mb-8 md:mb-12">
               <div className="bg-black rounded-3xl p-2 shadow-2xl">
                 <div className="bg-black rounded-3xl p-2 shadow-2xl">
+                  <div className="bg-black rounded-3xl p-2 shadow-2xl">
+                    <div className="bg-gray-900 rounded-2xl p-1">
+                      {/* Notch do iPhone */}
+                      <div className="bg-black h-6 rounded-t-2xl relative">
+                        <div className="absolute top-1 left-1/2 transform -translate-x-1/2 bg-gray-800 w-16 h-4 rounded-full"></div>
+                      </div>
+                      {/* Tela do celular */}
+                      <div className="bg-white rounded-2xl overflow-hidden">
+                        <img 
+                          src="https://i.imgur.com/ojXMRwn.png" 
+                          alt="Depoimentos WhatsApp Grupo VIP Articulazen" 
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Chamada para Ação */}
+                <div className="text-center">
+                  <p className="text-xl md:text-2xl font-bold text-orange-800 mb-4 md:mb-6">
+                    Você quer ser o próximo a mandar uma mensagem dessas?
+                  </p>
+                  <p className="text-lg md:text-xl text-orange-600 font-semibold">
+                    Escolha seu kit abaixo e comece a viver sem dor!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        {/* SEÇÃO DE DEPOIMENTOS WHATSAPP VIP */}
+        <section className="py-8 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-orange-800 leading-tight">
+              Veja o Que Estão Comentando em Nosso 
+              <span className="text-orange-600 block md:inline bg-orange-100 px-2 rounded"> GRUPO VIP </span>
+              de Clientes
+            </h2>
+            
+            {/* Moldura do Celular */}
+            <div className="max-w-sm mx-auto mb-8 md:mb-12">
+              <div className="bg-black rounded-3xl p-2 shadow-2xl">
+                <div className="bg-black rounded-3xl p-2 shadow-2xl">
                   <div className="bg-gray-900 rounded-2xl p-1">
                     {/* Notch do iPhone */}
                     <div className="bg-black h-6 rounded-t-2xl relative">
