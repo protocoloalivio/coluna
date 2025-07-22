@@ -367,7 +367,7 @@ function App() {
                     {/* Tela do celular */}
                     <div className="bg-white rounded-2xl overflow-hidden">
                       <img 
-                        src="https://i.imgur.com/ojXMRwn.png" 
+                        src="https://i.imgur.com/IPm7GJh.png" 
                         alt="Depoimentos WhatsApp Grupo VIP Articulazen" 
                         className="w-full h-auto"
                       />
