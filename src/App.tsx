@@ -331,33 +331,18 @@ function App() {
         </section>
 
         {/* FOOTER INICIAL */}
-        <footer className="bg-orange-600 text-white py-8 md:py-16 text-center">
+        {/* SEÇÃO DE DEPOIMENTOS WHATSAPP VIP */}
+        <section className="py-8 md:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
-              NÃO DEIXE A DOR ROUBAR MAIS UM DIA DA SUA VIDA!
-            </h3>
-            <p className="text-base md:text-lg mb-6 md:mb-8 opacity-90">
-              Milhares de pessoas já escolheram o Articulazen para recuperar sua qualidade de vida.
-            </p>
-          </div>
-        </footer>
-        </>
-      )}
-
-      {/* PÁGINA DE OFERTAS */}
-      {currentPage === 'offers' && (
-        <div className="animate-fade-in">
-          {/* SEÇÃO DE DEPOIMENTOS WHATSAPP VIP */}
-          <section className="py-8 md:py-16 bg-white">
-            <div className="max-w-4xl mx-auto px-4">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-orange-800 leading-tight">
-                Veja o Que Estão Comentando em Nosso 
-                <span className="text-orange-600 block md:inline bg-orange-100 px-2 rounded"> GRUPO VIP </span>
-                de Clientes
-              </h2>
-              
-              {/* Moldura do Celular */}
-              <div className="max-w-sm mx-auto mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-orange-800 leading-tight">
+              Veja o Que Estão Comentando em Nosso 
+              <span className="text-orange-600 block md:inline bg-orange-100 px-2 rounded"> GRUPO VIP </span>
+              de Clientes
+            </h2>
+            
+            {/* Moldura do Celular */}
+            <div className="max-w-sm mx-auto mb-8 md:mb-12">
+              <div className="bg-black rounded-3xl p-2 shadow-2xl">
                 <div className="bg-black rounded-3xl p-2 shadow-2xl">
                   <div className="bg-gray-900 rounded-2xl p-1">
                     {/* Notch do iPhone */}
@@ -388,6 +373,22 @@ function App() {
             </div>
           </section>
 
+        <footer className="bg-orange-600 text-white py-8 md:py-16 text-center">
+          <div className="max-w-4xl mx-auto px-4">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6">
+              NÃO DEIXE A DOR ROUBAR MAIS UM DIA DA SUA VIDA!
+            </h3>
+            <p className="text-base md:text-lg mb-6 md:mb-8 opacity-90">
+              Milhares de pessoas já escolheram o Articulazen para recuperar sua qualidade de vida.
+            </p>
+          </div>
+        </footer>
+        </>
+      )}
+
+      {/* PÁGINA DE OFERTAS */}
+      {currentPage === 'offers' && (
+        <div className="animate-fade-in">
           {/* OFERTA (A HORA DE PASSAR O CARTÃO) */}
           <section className="py-8 md:py-16 bg-gradient-to-br from-orange-600 to-orange-500 text-white">
             <div className="max-w-6xl mx-auto px-4">
