@@ -343,6 +343,18 @@ function App() {
             {/* Moldura do Celular */}
             <div className="max-w-sm mx-auto mb-8 md:mb-12">
               <div className="bg-black rounded-3xl p-2 shadow-2xl">
+        {/* SEÇÃO DE DEPOIMENTOS WHATSAPP VIP */}
+        <section className="py-8 md:py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-12 text-orange-800 leading-tight">
+              Veja o Que Estão Comentando em Nosso 
+              <span className="text-orange-600 block md:inline bg-orange-100 px-2 rounded"> GRUPO VIP </span>
+              de Clientes
+            </h2>
+            
+            {/* Moldura do Celular */}
+            <div className="max-w-sm mx-auto mb-8 md:mb-12">
+              <div className="bg-black rounded-3xl p-2 shadow-2xl">
                 <div className="bg-black rounded-3xl p-2 shadow-2xl">
                   <div className="bg-black rounded-3xl p-2 shadow-2xl">
                     <div className="bg-gray-900 rounded-2xl p-1">
