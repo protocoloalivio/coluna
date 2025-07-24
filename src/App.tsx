@@ -41,6 +41,21 @@ function App() {
     seconds: 32
   });
 
+  // Carrega o script da VSL quando o componente monta
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '/src/vsl/player.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup: remove o script quando o componente desmonta
+      const existingScript = document.querySelector('script[src="/src/vsl/player.js"]');
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
   // Despachante de UTM v1.0 - por Lek do Black
   const handleCheckoutClick = (checkoutUrl: string) => {
     console.log('LEK DO BLACK: Despachante preparando o pacote...');
@@ -182,23 +197,22 @@ function App() {
               <span className="text-orange-600 block md:inline"> eu gravei isso pensando em você.</span>
             </h2>
             <div className="relative bg-black rounded-lg overflow-hidden mx-auto" style={{ maxWidth: '360px', aspectRatio: '9/16' }}>
-              <video 
-                className="w-full h-full object-cover"
-                autoPlay 
-                muted 
-                controls
-                poster="/ChatGPT Image 16_07_2025, 12_23_39.png"
-              >
-                <source src="#" type="video/mp4" />
-                Seu navegador não suporta vídeos.
-              </video>
+              <vturb-smartplayer 
+                id="vid-6882458ee82e39bf92b7d0aa" 
+                style={{
+                  display: 'block',
+                  margin: '0 auto',
+                  width: '100%',
+                  maxWidth: '400px'
+                }}
+              ></vturb-smartplayer>
               <div className="absolute top-4 left-4 bg-orange-600 text-white px-3 py-1 rounded text-sm font-bold flex items-center gap-1">
                 <Play className="w-3 h-3" />
                 ASSISTA AGORA
               </div>
             </div>
             <p className="text-sm text-orange-600 mt-4 max-w-md mx-auto">
-              
+              Assista até o final para descobrir o segredo que está mudando vidas!
             </p>
             
             {/* BOTÃO PARA MOSTRAR OFERTAS */}
