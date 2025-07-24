@@ -20,16 +20,16 @@ import {
 
 // Dados para as notificações
 const notifications = [
-  { name: "Carlos Silva", city: "São Paulo", product: "Kit de 5 potes" },
-  { name: "Maria Santos", city: "Rio de Janeiro", product: "Kit de 3 potes" },
-  { name: "João Oliveira", city: "Belo Horizonte", product: "Kit de 5 potes" },
-  { name: "Ana Costa", city: "Salvador", product: "Kit de 3 potes" },
-  { name: "Pedro Lima", city: "Fortaleza", product: "Kit de 5 potes" },
-  { name: "Lucia Ferreira", city: "Brasília", product: "Kit de 3 potes" },
-  { name: "Roberto Alves", city: "Curitiba", product: "Kit de 5 potes" },
-  { name: "Carmen Rodriguez", city: "Porto Alegre", product: "Kit de 3 potes" },
-  { name: "Francisco Souza", city: "Recife", product: "Kit de 5 potes" },
-  { name: "Helena Martins", city: "Goiânia", product: "Kit de 3 potes" }
+  { name: "Carlos Silva", city: "São Paulo", product: "Combo de 5 frascos" },
+  { name: "Maria Santos", city: "Rio de Janeiro", product: "Combo de 3 frascos" },
+  { name: "João Oliveira", city: "Belo Horizonte", product: "Combo de 5 frascos" },
+  { name: "Ana Costa", city: "Salvador", product: "Combo de 3 frascos" },
+  { name: "Pedro Lima", city: "Fortaleza", product: "Combo de 5 frascos" },
+  { name: "Lucia Ferreira", city: "Brasília", product: "Combo de 3 frascos" },
+  { name: "Roberto Alves", city: "Curitiba", product: "Combo de 5 frascos" },
+  { name: "Carmen Rodriguez", city: "Porto Alegre", product: "Combo de 3 frascos" },
+  { name: "Francisco Souza", city: "Recife", product: "Combo de 5 frascos" },
+  { name: "Helena Martins", city: "Goiânia", product: "Combo de 3 frascos" }
 ];
 
 function App() {
@@ -178,9 +178,8 @@ function App() {
         <section className="py-8 md:py-16 bg-orange-50">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-orange-800 leading-tight">
-              ASSISTA: Cientista Brasileiro Ignorado Pela Indústria Farmacêutica Revela Como Essa Raiz 
-              <span className="text-orange-600 block md:inline"> DESLIGA A INFLAMAÇÃO </span>
-              do seu Corpo
+              Se você sente dor ao levantar,
+              <span className="text-orange-600 block md:inline"> eu gravei isso pensando em você.</span>
             </h2>
             <div className="relative bg-black rounded-lg overflow-hidden mx-auto" style={{ maxWidth: '360px', aspectRatio: '9/16' }}>
               <video 
@@ -265,8 +264,8 @@ function App() {
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               <div className="w-full md:w-1/2">
                 <img 
-                    src="https://i.imgur.com/eobjHnm.png" 
-                  alt="Articulazen - Pote do Produto" 
+                  src="https://i.imgur.com/eobjHnm.png" 
+                  alt="Articulazen - Frasco do Produto" 
                   className="w-full max-w-sm mx-auto rounded-lg shadow-2xl"
                 />
               </div>
@@ -288,10 +287,6 @@ function App() {
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     <span className="text-base md:text-lg">100% natural, sem efeitos colaterais</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />
-                    <span className="text-base md:text-lg">Aprovado pela ANVISA</span>
                   </div>
                 </div>
               </div>
@@ -382,7 +377,7 @@ function App() {
                   Você quer ser o próximo a mandar uma mensagem dessas?
                 </p>
                 <p className="text-lg md:text-xl text-orange-600 font-semibold">
-                  Escolha seu kit abaixo e comece a viver sem dor!
+                  Escolha seu combo abaixo e comece a viver sem dor!
                 </p>
               </div>
             </div>
@@ -392,22 +387,22 @@ function App() {
           <section className="py-8 md:py-16 bg-gradient-to-br from-orange-600 to-orange-500 text-white">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-4 text-white">
-                ESCOLHA O SEU KIT DA LIBERDADE
+                ESCOLHA O SEU COMBO DA LIBERDADE
               </h2>
               <p className="text-lg md:text-xl text-center mb-8 md:mb-12 text-orange-100 font-semibold">
                 DESCONTO DE LANÇAMENTO DE ATÉ 60% HOJE!
               </p>
               <div className="grid gap-6 md:gap-8 mb-8 md:mb-12">
-                {/* Kit 1 */}
+                {/* Combo 1 */}
                 <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-orange-200 hover:shadow-xl transition-shadow">
                   <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800">EXPERIMENTE</h3>
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/eobjHnm.png" 
-                      alt="1 Pote Articulazen" 
+                      alt="1 Frasco Articulazen" 
                       className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4 rounded"
                     />
-                    <p className="text-base md:text-lg text-orange-600 mb-2">1 Pote - Tratamento 1 Mês</p>
+                    <p className="text-base md:text-lg text-orange-600 mb-2">1 Frasco - Tratamento 1 Mês</p>
                     <p className="text-sm text-gray-500 line-through">De R$ 197</p>
                     <p className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">R$ 127,00</p>
                     <p className="text-xs md:text-sm text-orange-600">ou 12x de R$ 10,58</p>
@@ -420,7 +415,7 @@ function App() {
                   </button>
                 </div>
 
-                {/* Kit 2 - MAIS VENDIDO */}
+                {/* Combo 2 - MAIS VENDIDO */}
                 <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-4 border-orange-600 hover:shadow-xl transition-shadow relative">
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-black text-base md:text-lg shadow-lg border-2 border-white">
                     ⭐ MAIS POPULAR ⭐
@@ -431,11 +426,11 @@ function App() {
                       <div>OFF</div>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800 mt-2 md:mt-4">LEVE 3 POTES</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-orange-800 mt-2 md:mt-4">LEVE 3 FRASCOS</h3>
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/Mnogy18.png" 
-                      alt="3 Potes Articulazen" 
+                      alt="3 Frascos Articulazen" 
                       className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4 rounded"
                     />
                     <p className="text-base md:text-lg text-orange-600 mb-2">Tratamento 3 Meses</p>
@@ -448,14 +443,14 @@ function App() {
                     <p className="text-orange-600 font-bold text-xs md:text-sm mt-2">+ FRETE GRÁTIS</p>
                   </div>
                   <button 
-                    onClick={() => handleCheckoutClick("https://LINK_CHECKOUT_KIT_3_AQUI")}
+                    onClick={() => handleCheckoutClick("https://pay.kirvano.com/da6035a3-e8fc-42f2-adc9-03da00cda953")}
                     className="w-full bg-orange-700 hover:bg-orange-800 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors"
                   >
                     🚀 QUERO MINHA LIBERDADE DAS DORES!
                   </button>
                 </div>
 
-                {/* Kit 3 */}
+                {/* Combo 3 */}
                 <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 border-2 border-orange-200 hover:shadow-xl transition-shadow">
                   {/* CONTADOR REGRESSIVO */}
                   <div className="bg-red-600 text-white text-center py-2 md:py-3 rounded-t-lg -mx-4 md:-mx-8 -mt-4 md:-mt-8 mb-4 md:mb-6">
@@ -476,10 +471,10 @@ function App() {
                   <div className="text-center mb-6">
                     <img 
                       src="https://i.imgur.com/PQfnT3P.jpeg" 
-                      alt="5 Potes Articulazen" 
-                      className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4 rounded"
+                      alt="5 Frascos Articulazen" 
+                      className="w-48 md:w-64 mx-auto mb-4 rounded object-contain"
                     />
-                    <p className="text-base md:text-lg text-orange-600 mb-2">5 Potes - Tratamento 5 Meses</p>
+                    <p className="text-base md:text-lg text-orange-600 mb-2">5 Frascos - Tratamento 5 Meses</p>
                     <p className="text-sm text-gray-500 line-through">De R$ 635</p>
                     <p className="text-2xl md:text-3xl font-bold text-orange-600 mb-2">R$ 247,00</p>
                     <p className="text-xs md:text-sm text-orange-600">ou 12x de R$ 20,58</p>
@@ -489,7 +484,7 @@ function App() {
                     <p className="text-orange-600 font-bold text-xs md:text-sm mt-2">+ FRETE GRÁTIS</p>
                   </div>
                   <button 
-                    onClick={() => handleCheckoutClick("https://LINK_CHECKOUT_KIT_5_AQUI")}
+                    onClick={() => handleCheckoutClick("https://pay.kirvano.com/5ae4aac0-c51e-4df0-b1c6-0b1157f18cae")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg text-base md:text-lg transition-colors animate-pulse"
                   >
                     🔥 GARANTIR DESCONTO ANTES QUE ACABE
